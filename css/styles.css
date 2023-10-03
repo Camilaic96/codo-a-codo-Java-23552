@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+NKo+Unjoined:wght@400;600&display=swap');
+html {
+    font-size: 62.5%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+}
+body {
+    overflow-x: hidden;
+    font-family: 'Noto Sans NKo Unjoined', sans-serif;
+}
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.colorWhite {
+    color: white;
+}
+.colorGray {
+    color: rgb(154, 158, 161);
+}
+.colorGreen {
+    color: #29a746;
+}
+.backgroundYellow {
+    background-color: rgb(255, 194, 8);
+}
+.backgroundBlue {
+    background-color: rgb(22, 163, 183);
+    color: white;
+}
+.backgroundGray {
+    background-color: rgb(108, 117, 124);
+    color: white;
+}
+.backgroundRed {
+    background-color: rgb(221, 54, 71);
+    color: white;
+}
+.buttons {
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+.transparentBtn {
+    border: 1px solid white;
+}
+.greenBtn {
+    background-color: #29a746;
+}
+.header {
+    width: 100%;
+    min-height: 100vh;
+}
+.header__nav {
+    min-height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(53, 58, 64);
+    padding: 0 20px;
+}
+.header__nav__logo {
+    display: flex;
+    align-items: center;
+}
+.header__nav__logo img {
+    height: 100px;
+}
+.header__nav__logo h2 {
+    font-size: 28px;
+    font-weight: 400;
+}
+.header__nav__list {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.header__nav__list li a {
+    padding-left: 30px;
+    font-size: 22px;
+}
+.header__banner {
+    background: linear-gradient(to right, #00000091, #00000091), url("../assets/img/BuenosAires.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: calc(100vh - 120px);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.header__banner__content {
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+}
+.header__banner__content h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+.header__banner__content p {
+    font-size: 22px;
+    padding: 20px 0;
+    line-height: 1.5;
+}
+.header__banner__content__buttons {
+    margin-top: 20px;
+}
+
+#oradores {
+    text-align: center;
+}
+.oradores__h2 {
+    padding: 15px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.oradores__h2 div {
+    font-size: 16px;
+    font-weight: 400;
+}
+.oradores__contenedorTarjetas {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.oradores__contenedorTarjetas__tarjeta {
+    width: 450px;
+    height: 700px;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 5px;
+}
+.oradores__contenedorTarjetas__tarjeta img {
+    width: 100%;
+    object-fit: cover;
+    height: 450px;
+}
+.oradores__contenedorTarjetas__tarjeta__texto {
+    padding: 20px;
+    text-align: left;
+}
+.oradores__contenedorTarjetas__tarjeta__temas {
+    display: flex;
+}
+.oradores__contenedorTarjetas__tarjeta__temas h4 {
+    margin-right: 10px;
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.oradores__contenedorTarjetas__tarjeta__titulo {
+    font-size: 24px;
+}
+.oradores__contenedorTarjetas__tarjeta__texto p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+#lugarFecha {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+    margin-top: 50px;
+    color: white;
+}
+.lugarFecha__img {
+    width: 100%;
+    height: 300px;
+    background-image: url("../assets/img/honolulu.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.lugarFecha__info {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgb(51, 58, 64);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.lugarFecha__info h2 {
+    font-size: 40px;
+}
+.lugarFecha__info p {
+    line-height: 1.8;
+    font-size: 16px;
+    margin: 10px 0 30px 0;
+}
+.lugarFecha__info p sup {
+    font-size: 10px;
+}
+.lugarFecha__info a {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#formularioOrador {
+    text-align: center;
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+}
+.formularioOrador__h2 {
+    padding: 15px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.formularioOrador__h2 div {
+    font-size: 16px;
+    font-weight: 400;
+}
+.formularioOrador__p {
+    font-size: 18px;
+}
+.formularioOrador__p span {
+    font-size: 18px;
+}
+.formularioOrador__form {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    color: dimgray;
+    text-align: left;
+}
+.formularioOrador__form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.formularioOrador__form div input {
+    width: 100%;
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 8px;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 5px;
+    color: dimgray;
+}
+.formularioOrador__form textarea {
+    width: 100%;
+    font-size: 24px;
+    margin: 5px 0;
+    height: 130px;
+    padding: 10px 22px;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 5px;
+    color: dimgray;
+}
+.formularioOrador__form__btn {
+    background-color: rgb(150, 201, 62);
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0px;
+    border: 0;
+    font-size: 24px;
+}
+.footer {
+    background-image: linear-gradient(to right, #1d3744, #1d3e4f, #1d455a, #1d4c66, #1e5372);
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.footer ul {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.footer ul li{
+    padding: 10px;
+}
+.footer ul li a {
+    font-size: 20px;
+}
+@media screen and (min-width: 991px) {
+    .header {
+        width: 100%;
+        min-height: 100vh;
+    }
+    .header__nav {
+        min-height: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(53, 58, 64);
+        padding: 0 100px;
+    }
+    .header__nav__logo {
+        display: flex;
+        align-items: center;
+    }
+    .header__nav__logo img {
+        height: 100px;
+    }
+    .header__nav__logo h2 {
+        font-size: 28px;
+        font-weight: 400;
+    }
+    .header__nav__list {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    .header__nav__list li a {
+        padding-left: 30px;
+        font-size: 22px;
+    }
+    .header__banner {
+        background: linear-gradient(to right, #00000093, #00000079, #00000093), url("../assets/img/BuenosAires.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: calc(100vh - 120px);
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .header__banner__content {
+        width: 50%;
+        text-align: right;
+        padding: 0 100px;
+    }
+    .header__banner__content h1 {
+        font-size: 48px;
+        font-weight: bold;
+    }
+    .header__banner__content p {
+        font-size: 22px;
+        padding: 20px 0;
+        line-height: 1.5;
+    }
+    .header__banner__content__buttons {
+        margin-top: 20px;
+    }
+
+    #oradores {
+        text-align: center;
+    }
+    .oradores__h2 {
+        padding: 15px;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .oradores__h2 div {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .oradores__contenedorTarjetas {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .oradores__contenedorTarjetas__tarjeta {
+        width: 450px;
+        height: 700px;
+        border: 1px solid rgb(212, 212, 212);
+        border-radius: 5px;
+    }
+    .oradores__contenedorTarjetas__tarjeta img {
+        width: 100%;
+        object-fit: cover;
+        height: 450px;
+    }
+    .oradores__contenedorTarjetas__tarjeta__texto {
+        padding: 20px;
+        text-align: left;
+    }
+    .oradores__contenedorTarjetas__tarjeta__temas {
+        display: flex;
+    }
+    .oradores__contenedorTarjetas__tarjeta__temas h4 {
+        margin-right: 10px;
+        padding: 2px 6px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .oradores__contenedorTarjetas__tarjeta__titulo {
+        font-size: 24px;
+    }
+    .oradores__contenedorTarjetas__tarjeta__texto p {
+        margin-top: 10px;
+        line-height: 1.6;
+    }
+
+    #lugarFecha {
+        display: flex;
+        flex-direction: row;
+        height: 600px;
+    }
+    .lugarFecha__img {
+        width: 50%;
+        height: 100%;
+    }
+    .lugarFecha__info {
+        align-items: start;
+        width: 50%;
+        text-align: left;
+    }
+    #formularioOrador {
+        width: 60%;
+    }
+    .formularioOrador__form {
+        width: 80%;
+        margin: auto;
+    }
+    .formularioOrador__form div {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        gap: 40px;
+    }
+    .formularioOrador__form div input {
+        width: 50%;
+        margin: 15px 0;
+    }
+    .footer ul {
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}

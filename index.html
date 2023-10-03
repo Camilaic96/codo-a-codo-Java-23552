@@ -5,79 +5,103 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
     
     <title>Proyecto Integrador Front | Camila Irupé Cuello</title>
 </head>
 
 <body>
-    <header>
-        <a href="#">
-            <img src="./assets/img/logo_cac.png" alt="Logo de Codo a Codo 4.0" loading="lazy" />
-            <h2>Conf Bs As</h2>
-        </a>
-        
-        <nav>
-            <ul>
-                <li><a href="#conferencia">La conferencia</a></li>
-                <li><a href="#oradores">Los oradores</a></li>
-                <li><a href="#lugarFecha">El lugar y la fecha</a></li>
-                <li><a href="#formularioOrador">Conviértete en orador</a></li>
-                <li><a href="./pages/ticket.html">Comprar tickets</a></li>
-            </ul>
-        </nav>
-        <section id="conferencia">
-            <h1>Conf Bs As</h1>
-            <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. ¡Te esperamos!</p>
-            <a href="#formularioOrador">Quiero ser orador</a>
-            <a href="./pages/ticket.html">Comprar tickets</a>
+    <header class="header">
+        <section class="header__nav">
+            <div class="header__nav__logo">
+                <a href="#">
+                    <img src="./assets/img/logo_cac.png" alt="Logo de Codo a Codo 4.0" loading="lazy"/>
+                </a>
+                <h2 class="colorWhite header__nav__h2">Conf Bs As</h2>
+            </div>
+            <nav>
+                <ul class="header__nav__list">
+                    <li><a href="#conferencia" class="colorWhite">La conferencia</a></li>
+                    <li><a href="#oradores" class="colorGray">Los oradores</a></li>
+                    <li><a href="#lugarFecha" class="colorGray">El lugar y la fecha</a></li>
+                    <li><a href="#formularioOrador" class="colorGray">Conviértete en orador</a></li>
+                    <li><a href="./pages/ticket.html" class="colorGreen">Comprar tickets</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section id="conferencia" class="header__banner colorWhite">
+            <div class="header__banner__content">
+                <h1>Conf Bs As</h1>
+                <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. ¡Te esperamos!</p>
+                <div class="header__banner__content__buttons">
+                    <a href="#formularioOrador" class="buttons transparentBtn">Quiero ser orador</a>
+                    <a href="./pages/ticket.html" class="buttons greenBtn">Comprar tickets</a>
+                </div>
+            </div>
         </section>
     </header>
     <main>
         <section id="oradores">
-            <h2><div>CONOCE A LOS</div>ORADORES</h2>
-            <div>
-                <img src="./assets/img/SteveJobs.jpg" alt="Steve Jobs" loading="lazy">
-                <h4>JavaScript</h4>
-                <h4>React</h4>
-                <h3>Steve Jobs</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus earum voluptates rerum ipsa accusamus, voluptas totam expedita quae quaerat consequuntur molestias libero tenetur nulla, architecto ex! Dolore similique error alias.</p>
-            </div>
-            <div>
-                <img src="./assets/img/BillGates.jpg" alt="Bill Gates" loading="lazy">
-                <h4>JavaScript</h4>
-                <h4>React</h4>
-                <h3>Bill Gates</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ex debitis tempora blanditiis quos, expedita ut harum est praesentium modi dolorem voluptas, aspernatur tempore perferendis vero hic dolores magni. Reiciendis!</p>
-            </div>
-            <div>
-                <img src="./assets/img/AdaLovalace.jpeg" alt="Ada Lovelace" loading="lazy">
-                <h4>Negocios</h4>
-                <h4>Startups</h4>
-                <h3>Ada Lovelace</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nisi natus aliquam dolore nihil harum debitis aut tempora tempore earum, est nam voluptates accusantium quo culpa maxime asperiores at placeat.</p>
+            <h2 class="oradores__h2"><div>CONOCE A LOS</div>ORADORES</h2>
+            <div class="oradores__contenedorTarjetas">
+                <div class="oradores__contenedorTarjetas__tarjeta">
+                    <img src="./assets/img/SteveJobs.jpg" alt="Steve Jobs" loading="lazy">
+                    <div class="oradores__contenedorTarjetas__tarjeta__texto">
+                        <div class="oradores__contenedorTarjetas__tarjeta__temas">
+                            <h4 class="backgroundYellow">JavaScript</h4>
+                            <h4 class="backgroundBlue">React</h4>
+                        </div>
+                        <h3 class="oradores__contenedorTarjetas__tarjeta__titulo">Steve Jobs</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus earum voluptates rerum ipsa accusamus, voluptas totam expedita quae quaerat consequuntur molestias libero tenetur nulla, architecto ex! Dolore similique error alias.</p>
+                    </div>
+                </div>
+                <div class="oradores__contenedorTarjetas__tarjeta">
+                    <img src="./assets/img/BillGates.jpg" alt="Bill Gates" loading="lazy">
+                    <div class="oradores__contenedorTarjetas__tarjeta__texto">
+                        <div class="oradores__contenedorTarjetas__tarjeta__temas">
+                            <h4 class="backgroundYellow">JavaScript</h4>
+                            <h4 class="backgroundBlue">React</h4>
+                        </div>
+                        <h3 class="oradores__contenedorTarjetas__tarjeta__titulo">Bill Gates</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ex debitis tempora blanditiis quos, expedita ut harum est praesentium modi dolorem voluptas, aspernatur tempore perferendis vero hic dolores magni. Reiciendis!</p>
+                    </div>
+                </div>
+                <div class="oradores__contenedorTarjetas__tarjeta">
+                    <img src="./assets/img/AdaLovalace.jpeg" alt="Ada Lovelace" loading="lazy">
+                    <div class="oradores__contenedorTarjetas__tarjeta__texto">
+                        <div class="oradores__contenedorTarjetas__tarjeta__temas">
+                            <h4 class="backgroundGray">Negocios</h4>
+                            <h4 class="backgroundRed">Startups</h4>
+                        </div>
+                        <h3 class="oradores__contenedorTarjetas__tarjeta__titulo">Ada Lovelace</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nisi natus aliquam dolore nihil harum debitis aut tempora tempore earum, est nam voluptates accusantium quo culpa maxime asperiores at placeat.</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="lugarFecha">
-            <div></div>
-            <div>
-                <h2>Buenos Aires - Octubre</h2>
+            <div class="lugarFecha__img"></div>
+            <div class="lugarFecha__info">
+                <h2>Bs As - Octubre</h2>
                 <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos, Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie).</p>
-                <a href="./pages/404.html">Conocé más</a>
+                <a href="./pages/404.html" class="transparentBtn">Conocé más</a>
             </div>
         </section>
         <section id="formularioOrador">
-            <h2>CONVIÉRTETE EN UN<div>ORADOR</div></h2>
-            <p>Anótate como orador para dar una <span>charla ignate</span>. ¡Cuéntanos de qué quieres hablar!</p>
-            <form action="">
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
-                <input type="text" id="apellido" name="apellido" placeholder="Apellido">
-                <textarea name="" id="" cols="30" rows="10">¿Sobre qué quieres hablar?</textarea>
+            <h2 class="formularioOrador__h2"><div>CONVIÉRTETE EN UN</div>ORADOR</h2>
+            <p class="formularioOrador__p">Anótate como orador para dar una <span>charla ignate</span>. ¡Cuéntanos de qué quieres hablar!</p>
+            <form action="" class="formularioOrador__form">
+                <div>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+                </div>
+                <textarea name="" id="">Sobre qué quieres hablar?</textarea>
                 <p>Recuerda incluir un título para tu charla</p>
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" class="buttons formularioOrador__form__btn">
             </form>
         </section>
     </main>
-    <!-- agregar publicidad con un aside -->
+    <!-- agregar publicidad con un aside 
     <aside>
         <p>PUBLICIDAD</p>
         <div>
@@ -85,15 +109,16 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, id.</p>
         </div>
     </aside>
-    <footer>
+    -->
+    <footer class="footer">
         <ul>
-            <a href="./pages/404.html"><li>Preguntas frecuentes</li></a>
-            <a href="./pages/404.html"><li>Contáctanos</li></a>
-            <a href="./pages/404.html"><li>Prensa</li></a>
-            <a href="./pages/404.html"><li>Conferencias</li></a>
-            <a href="./pages/404.html"><li>Términos y condiciones</li></a>
-            <a href="./pages/404.html"><li>Privacidad</li></a>
-            <a href="./pages/404.html"><li>Estudiantes</li></a>
+            <li><a href="./pages/404.html" class="colorWhite">Preguntas frecuentes</a></li>
+            <li><a href="./pages/404.html" class="colorWhite">Contáctanos</a></li>
+            <li><a href="./pages/404.html" class="colorWhite">Prensa</a></li>
+            <li><a href="./pages/404.html" class="colorWhite">Conferencias</a></li>
+            <li><a href="./pages/404.html" class="colorWhite">Términos y condiciones</a></li>
+            <li><a href="./pages/404.html" class="colorWhite">Privacidad</a></li>
+            <li><a href="./pages/404.html" class="colorWhite">Estudiantes</a></li>
         </ul>
     </footer>
 </body>
