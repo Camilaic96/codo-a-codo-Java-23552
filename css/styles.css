@@ -46,7 +46,6 @@ a {
     color: white;
     font-size: 20px;
     padding: 15px;
-    margin-left: 15px;
     border-radius: 5px;
 }
 .transparentBtn {
@@ -60,12 +59,13 @@ a {
     min-height: 100vh;
 }
 .header__nav {
-    min-height: 180px;
+    height: 320px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(53, 58, 64);
-    padding: 0 20px;
+    padding: 20px;
 }
 .header__nav__logo {
     display: flex;
@@ -80,6 +80,7 @@ a {
 }
 .header__nav__list {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
 }
@@ -92,7 +93,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: calc(100vh - 120px);
+    min-height: calc(100vh - 320px);
     display: flex;
     justify-content: end;
     align-items: center;
@@ -100,7 +101,7 @@ a {
 .header__banner__content {
     width: 100%;
     text-align: center;
-    padding: 0 20px;
+    padding: 20px;
 }
 .header__banner__content h1 {
     font-size: 48px;
@@ -113,8 +114,11 @@ a {
 }
 .header__banner__content__buttons {
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
-
 #oradores {
     text-align: center;
 }
@@ -296,64 +300,30 @@ a {
     font-size: 20px;
 }
 @media screen and (min-width: 991px) {
-    .header {
-        width: 100%;
-        min-height: 100vh;
-    }
     .header__nav {
-        min-height: 120px;
-        display: flex;
+        height: 140px;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        background-color: rgb(53, 58, 64);
         padding: 0 100px;
     }
-    .header__nav__logo {
-        display: flex;
-        align-items: center;
-    }
-    .header__nav__logo img {
-        height: 100px;
-    }
-    .header__nav__logo h2 {
-        font-size: 28px;
-        font-weight: 400;
-    }
     .header__nav__list {
-        display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
         text-align: center;
     }
-    .header__nav__list li a {
-        padding-left: 30px;
-        font-size: 22px;
-    }
     .header__banner {
-        background: linear-gradient(to right, #00000093, #00000079, #00000093), url("../assets/img/BuenosAires.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: calc(100vh - 120px);
+        min-height: calc(100vh - 140px);
         display: flex;
-        justify-content: end;
         align-items: center;
     }
     .header__banner__content {
         width: 50%;
         text-align: right;
-        padding: 0 100px;
-    }
-    .header__banner__content h1 {
-        font-size: 48px;
-        font-weight: bold;
-    }
-    .header__banner__content p {
-        font-size: 22px;
-        padding: 20px 0;
-        line-height: 1.5;
+        padding: 20px 100px;
     }
     .header__banner__content__buttons {
-        margin-top: 20px;
+        justify-content: right;
     }
 
     #oradores {
