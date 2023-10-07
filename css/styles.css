@@ -12,6 +12,9 @@ body {
     overflow-x: hidden;
     font-family: 'Noto Sans NKo Unjoined', sans-serif;
 }
+p{
+    line-height: 1.8;
+}
 ul li {
     list-style: none;
 }
@@ -104,13 +107,12 @@ a {
     padding: 20px;
 }
 .header__banner__content h1 {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: bold;
 }
 .header__banner__content p {
-    font-size: 22px;
+    font-size: 18px;
     padding: 20px 0;
-    line-height: 1.5;
 }
 .header__banner__content__buttons {
     margin-top: 20px;
@@ -141,7 +143,7 @@ a {
 }
 .oradores__contenedorTarjetas__tarjeta {
     width: 450px;
-    height: 700px;
+    height: 750px;
     border: 1px solid rgb(212, 212, 212);
     border-radius: 5px;
 }
@@ -169,7 +171,6 @@ a {
 }
 .oradores__contenedorTarjetas__tarjeta__texto p {
     margin-top: 10px;
-    line-height: 1.6;
 }
 
 #lugarFecha {
@@ -202,7 +203,6 @@ a {
     font-size: 40px;
 }
 .lugarFecha__info p {
-    line-height: 1.8;
     font-size: 16px;
     margin: 10px 0 30px 0;
 }
@@ -322,6 +322,12 @@ a {
         text-align: right;
         padding: 20px 100px;
     }
+    .header__banner__content h1 {
+        font-size: 48px;
+    }
+    .header__banner__content p {
+        font-size: 22px;
+    }
     .header__banner__content__buttons {
         justify-content: right;
     }
@@ -375,7 +381,6 @@ a {
     }
     .oradores__contenedorTarjetas__tarjeta__texto p {
         margin-top: 10px;
-        line-height: 1.6;
     }
 
     #lugarFecha {
