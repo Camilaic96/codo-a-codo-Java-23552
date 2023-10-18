@@ -259,164 +259,63 @@ a {
     border-radius: 5px;
     color: dimgray;
 }
-.formularioOrador__form textarea {
-    width: 100%;
-    font-size: 24px;
-    margin: 5px 0;
+#speakerForm .speakerForm__form textarea{
+    font-size: 2.4rem;
     height: 130px;
     padding: 10px 22px;
     border: 1px solid rgb(212, 212, 212);
     border-radius: 5px;
     color: dimgray;
 }
-.formularioOrador__form__btn {
-    background-color: rgb(150, 201, 62);
-    width: 100%;
-    padding: 15px;
-    margin: 20px 0px;
-    border: 0;
-    font-size: 24px;
+#speakerForm .speakerForm__form p{
+    font-size: 1.6rem;
+    color: dimgray;
 }
-.footer {
+#speakerForm .speakerForm__form__btn{
+    background-color: rgb(150, 201, 62);
+    font-size: 1.8rem;
+    border: 0;
+}
+/* fin form */
+/* comienzo footer */
+.footer{
     background-image: linear-gradient(to right, #1d3744, #1d3e4f, #1d455a, #1d4c66, #1e5372);
     min-height: 150px;
-    display: flex;
-    align-items: center;
-    padding: 20px;
 }
-.footer ul {
-    margin: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.footer ul li a{
+    font-size: 1.8rem;
+    color: white;
 }
-.footer ul li{
-    padding: 10px;
-}
-.footer ul li a {
-    font-size: 20px;
-}
-@media screen and (min-width: 991px) {
-    .header__nav {
-        height: 140px;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+/* fin footer */
+@media screen and (min-width: 991px){
+    .header .navbar{
         padding: 0 100px;
     }
-    .header__nav__list {
-        flex-direction: row;
-        justify-content: space-evenly;
-        text-align: center;
+    #conference{
+        padding: 0 100px;
     }
-    .header__banner {
-        min-height: calc(100vh - 140px);
-        display: flex;
-        align-items: center;
+    #conference h1{
+        font-size: 4.8rem;
     }
-    .header__banner__content {
-        width: 50%;
-        text-align: right;
-        padding: 20px 100px;
+    #conference p{
+        font-size: 2rem;
     }
-    .header__banner__content h1 {
-        font-size: 48px;
+    #conference .buttons{
+        font-size: 2rem;
     }
-    .header__banner__content p {
-        font-size: 22px;
+    #placeAndDate .placeAndDate__img{
+        min-height: 600px;
     }
-    .header__banner__content__buttons {
-        justify-content: right;
+    #placeAndDate .placeAndDate__info{
+        min-height: 600px;
     }
-
-    #oradores {
-        text-align: center;
+    #speakerForm p{
+        font-size: 2rem;
     }
-    .oradores__h2 {
-        padding: 15px;
-        font-size: 40px;
-        font-weight: bold;
+    #speakerForm p span{
+        font-size: 2rem;
     }
-    .oradores__h2 div {
-        font-size: 16px;
-        font-weight: 400;
-    }
-    .oradores__contenedorTarjetas {
-        width: 80%;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    .oradores__contenedorTarjetas__tarjeta {
-        width: 450px;
-        height: 700px;
-        border: 1px solid rgb(212, 212, 212);
-        border-radius: 5px;
-    }
-    .oradores__contenedorTarjetas__tarjeta img {
-        width: 100%;
-        object-fit: cover;
-        height: 450px;
-    }
-    .oradores__contenedorTarjetas__tarjeta__texto {
-        padding: 20px;
-        text-align: left;
-    }
-    .oradores__contenedorTarjetas__tarjeta__temas {
-        display: flex;
-    }
-    .oradores__contenedorTarjetas__tarjeta__temas h4 {
-        margin-right: 10px;
-        padding: 2px 6px;
-        border-radius: 5px;
-        font-weight: bold;
-        font-size: 14px;
-    }
-    .oradores__contenedorTarjetas__tarjeta__titulo {
-        font-size: 24px;
-    }
-    .oradores__contenedorTarjetas__tarjeta__texto p {
-        margin-top: 10px;
-    }
-
-    #lugarFecha {
-        display: flex;
-        flex-direction: row;
-        height: 600px;
-    }
-    .lugarFecha__img {
-        width: 50%;
-        height: 100%;
-    }
-    .lugarFecha__info {
-        align-items: start;
-        width: 50%;
-        text-align: left;
-    }
-    #formularioOrador {
-        width: 60%;
-    }
-    .formularioOrador__form {
-        width: 80%;
-        margin: auto;
-    }
-    .formularioOrador__form div {
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-        gap: 40px;
-    }
-    .formularioOrador__form div input {
-        width: 50%;
-        margin: 15px 0;
-    }
-    .footer ul {
-        width: 90%;
-        flex-direction: row;
-        justify-content: space-evenly;
+    #speakerForm .speakerForm__form__btn{
+        font-size: 2.4rem;
     }
 }
