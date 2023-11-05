@@ -51,6 +51,9 @@ p{
     width: 100%;
     min-height: 100vh;
 }
+.headerTickets{
+    min-height: initial;
+}
 .header .navbar{
     background-color: rgb(53, 58, 64);
     min-height: 120px;
