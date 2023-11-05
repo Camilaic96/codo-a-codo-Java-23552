@@ -51,9 +51,6 @@ p{
     width: 100%;
     min-height: 100vh;
 }
-.headerTickets{
-    min-height: initial;
-}
 .header .navbar{
     background-color: rgb(53, 58, 64);
     min-height: 120px;
@@ -163,6 +160,51 @@ p{
     font-size: 1.8rem;
     border: 0;
 }
+/* page: tickets */
+.headerTickets{
+    min-height: initial;
+}
+.mainTickets .cardCategory{
+    width: 260px;
+    height: 260px;
+}
+.mainTickets .cardCategory .card-body .card-title{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.border-blue{
+    border: 1px solid rgb(0, 123, 255);
+}
+.border-lightblue{
+    border: 1px solid rgb(23, 162, 184);
+}
+.border-yellow{
+    border: 1px solid rgb(255, 193, 7);
+}
+.mainTickets h1{
+    font-weight: bold;
+}
+.mainTickets h1 div{
+    font-weight: 500;
+}
+.mainTickets form .totalPrice{
+    background-color: rgb(204, 229, 255);
+    border: 1px solid rgb(185, 219, 255);
+    border-radius: 5px;
+    color: rgb(0, 64, 133);
+}
+.mainTickets form input, .mainTickets form .form-select{
+    font-size: 1.6rem;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 5px;
+    color: dimgray;
+    padding: 5px 10px;
+}
+.mainTickets form .btn{
+    background-color: rgb(151, 201, 62);
+    border: 0;
+}
+/* end page: tickets */
 .footer{
     background-image: linear-gradient(to right, #1d3744, #1d3e4f, #1d455a, #1d4c66, #1e5372);
     min-height: 150px;
@@ -201,5 +243,8 @@ p{
     }
     #speakerForm .speakerForm__form__btn{
         font-size: 2.4rem;
+    }
+    .mainTickets h1{
+        font-size: 3.4rem;
     }
 }
