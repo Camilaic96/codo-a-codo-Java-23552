@@ -46,7 +46,6 @@
             </div>
         </nav>
     </header>
-
     <main class="p-5 mainTickets d-flex flex-column justify-content-center align-items-center col-md-10 offset-md-1 col-lg-8 offset-lg-2">
         <section class="d-flex flex-wrap justify-content-center align-items-center gap-5 gap-lg-2 w-100">
             <div class="card cardCategory border-blue">
@@ -75,30 +74,55 @@
             </div>
         </section>
         <h1 class="text-center text-uppercase my-3"><div>venta</div>valor de ticket $200</h1>
-        <form action="" class="d-flex flex-column gap-4 p-3 p-xl-5 col-12 col-xl-9">
+        <form action="" id="form-tickets" class="d-flex flex-column gap-4 p-3 p-xl-5 col-12 col-xl-9">
             <div class="d-flex flex-column flex-lg-row gap-3">
-                <input type="text" placeholder="Nombre" id="first_name" class="w-100"/>
-                <input type="text" placeholder="Apellido" id="last_name" class="w-100"/>
+                <div class="w-100">
+                    <input type="text" placeholder="Nombre" id="first_name" class="form-control w-100" required/>
+                    <div class="invalid-feedback" id="error-firstName">
+                        <p>Ingrese su nombre</p>
+                    </div>
+                </div>
+                <div class="w-100">
+                    <input type="text" placeholder="Apellido" id="last_name" class="form-control w-100" required/>
+                    <div class="invalid-feedback" id="error-lastName">
+                        <p>Ingrese su apellido</p>
+                    </div>
+                </div>
             </div>
-            <input type="email" name="email" placeholder="Correo" id="email" class="w-100"/>
+            <div class="w-100">
+                <input type="email" name="email" placeholder="Correo" id="email" class="form-control w-100" required/>
+                <div class="invalid-feedback" id="error-email">
+                    <p>Ingrese un correo válido</p>
+                </div>
+            </div>
             <div class="d-flex flex-column flex-lg-row gap-3 w-100">
-                <div class="d-flex flex-lg-column gap-3 w-100">
-                    <label for="quantity" class="me-3">Cantidad</label>
-                    <input type="number" name="quantity" id="quantity" placeholder="cantidad" class="w-100">
+                <div class="w-100">
+                    <div class="d-flex flex-lg-column gap-3 w-100">
+                        <label for="quantity" class="me-3 form-label">Cantidad</label>
+                        <input type="number" name="quantity" id="quantity" placeholder="cantidad" class="form-control w-100" min="1" required>
+                    </div>
+                    <div class="invalid-feedback" id="error-quantity">
+                        <p>Ingrese la cantidad de tickets</p>
+                    </div>
                 </div>
                 <div class="d-flex flex-lg-column gap-3 w-100">
-                    <label for="category" class="me-3">Categoría</label>
-                    <select class="form-select" aria-label="Default select example" class="w-100">
+                    <label for="category" class="me-3 form-label">Categoría</label>
+                    <select class="form-select" aria-label="Categoría" class="w-100" id="category">
+                        <option value="" selected>--Seleccione una opción--</option>
+                        <option value="0">Sin categoría</option>
                         <option value="1">Estudiante</option>
                         <option value="2">Trainee</option>
                         <option value="3">Junior</option>
                     </select>
+                    <div class="invalid-feedback" id="error-category">
+                        <p>Elija una categoría</p>
+                    </div>
                 </div>
             </div>
             <p class="totalPrice p-3">Total a Pagar: $<span id="total"></span></p>
             <div class="d-flex gap-3">
-                <button type="button" id="delete" class="btn btn-success w-100 p-3 fs-3">Borrar</button>
-                <button type="button" id="purchase" class="btn btn-success w-100 p-3 fs-3">Resumen</button>
+                <button type="reset" id="btnDelete" class="btn btn-success w-100 p-3 fs-3">Borrar</button>
+                <button type="button" id="btnPurchase" class="btn btn-success w-100 p-3 fs-3">Resumen</button>
             </div>
         </form>
     </main>
@@ -118,6 +142,7 @@
     </footer>
 
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/tickets.js"></script>
 </body>
 
 </html>
