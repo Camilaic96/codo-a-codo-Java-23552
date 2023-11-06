@@ -168,6 +168,18 @@ p{
     width: 260px;
     height: 260px;
 }
+.mainTickets section:hover > :not(:hover){
+    opacity: 0.4;
+}
+.mainTickets section .cardCategory.border-blue:hover{
+    border: 8px solid rgb(0, 123, 255);
+}
+.mainTickets section .cardCategory.border-lightblue:hover{
+    border: 8px solid rgb(23, 162, 184);
+}
+.mainTickets section .cardCategory.border-yellow:hover{
+    border: 8px solid rgb(255, 193, 7);
+}
 .mainTickets .cardCategory .card-body .card-title{
     font-size: 1.8rem;
     font-weight: bold;
