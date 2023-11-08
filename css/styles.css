@@ -11,6 +11,12 @@ html{
 body{
     overflow-x: hidden;
     font-family: 'Noto Sans NKo Unjoined', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex-grow: 1;
 }
 ul li{
     list-style: none;
@@ -160,8 +166,7 @@ p{
     font-size: 1.8rem;
     border: 0;
 }
-/* page: tickets */
-.headerTickets{
+.headerTickets, .headerError404{
     min-height: initial;
 }
 .mainTickets .cardCategory{
@@ -216,7 +221,23 @@ p{
     background-color: rgb(151, 201, 62);
     border: 0;
 }
-/* end page: tickets */
+.mainError404{
+    background-image: linear-gradient(to right, #000000, #2a2a2a, #4f4f4f, #787878, #a4a4a4);
+    color: #ffffff;
+    padding: 20px;
+}
+.mainError404 h1{
+    color: rgb(255, 187, 0);
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.mainError404 a{
+    text-decoration: underline;
+    font-weight: 500;
+}
+.mainError404 .img-error404{
+    width: 200px;
+}
 .footer{
     background-image: linear-gradient(to right, #1d3744, #1d3e4f, #1d455a, #1d4c66, #1e5372);
     min-height: 150px;
@@ -256,7 +277,16 @@ p{
     #speakerForm .speakerForm__form__btn{
         font-size: 2.4rem;
     }
-    .mainTickets h1{
-        font-size: 3.4rem;
+    .mainError404 h1{
+        font-size: 4.5rem;
+    }
+    .mainError404 p{
+        font-size: 2.5rem;
+    }
+    .mainError404 a{
+        font-size: 2.5rem;
+    }
+    .mainError404 .img-error404{
+        width: 400px;
     }
 }

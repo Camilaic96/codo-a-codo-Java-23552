@@ -5,76 +5,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Error 404</title>
 </head>
 
 <body>
-    <header class="header">
-        <section class="header__nav">
-            <div class="header__nav__logo">
-                <a href="#">
-                    <img src="./assets/img/logo_cac.png" alt="Logo de Codo a Codo 4.0" loading="lazy"/>
+    <header class="header headerError404">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid justify-content-between">
+                <a href="../index.html" class="col-8 col-md-6 col-lg-4 col-xl-3 d-flex align-items-center">
+                    <h2 class="colorWhite fs-1">Conf Bs As</h2>
                 </a>
-                <h2 class="colorWhite header__nav__h2">Conf Bs As</h2>
-            </div>
-            <nav>
-                <ul class="header__nav__list">
-                    <li><a href="../index.html#conferencia" class="colorWhite">La conferencia</a></li>
-                    <li><a href="../index.html#oradores" class="colorGray">Los oradores</a></li>
-                    <li><a href="../index.html#lugarFecha" class="colorGray">El lugar y la fecha</a></li>
-                    <li><a href="../index.html#formularioOrador" class="colorGray">Conviértete en orador</a></li>
-                    <li><a href="./tickets.html" class="colorGreen">Comprar tickets</a></li>
-                </ul>
-            </nav>
-        </section>
-        <section id="conferencia" class="header__banner colorWhite">
-            <div class="header__banner__content">
-                <h1>Conf Bs As</h1>
-                <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. ¡Te esperamos!</p>
-                <div class="header__banner__content__buttons">
-                    <a href="#formularioOrador" class="buttons transparentBtn">Quiero ser orador</a>
-                    <a href="./pages/tickets.html" class="buttons greenBtn">Comprar tickets</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation" class="col-4">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end flex-wrap align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-2 p-3" aria-current="page" href="../index.html#conference">La
+                                conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 p-3" href="../index.html#speakers">Los oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 p-3" href="../index.html#placeAndDate">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 p-3" href="../index.html#speakerForm">Conviértete en orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link colorGreen fs-2 p-3" href="./tickets.html">Comprar tickets</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </nav>
     </header>
-    <main>
-        <h2>Error 404</h2>
-        <p>Página no encontrada</p>
-    </main>
-    <!-- agregar publicidad con un aside -->
-    <aside>
-        <p>PUBLICIDAD</p>
+    <main class="d-flex flex-column flex-lg-row justify-content-around align-items-center mainError404 text-center">
         <div>
-            <a href=""><img src="" alt="" loading="lazy" ></a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, id.</p>
+            <h1>Error 404 - Página no encontrada</h1>
+            <p><a href="../index.html">Volver al inicio</a> o <a href="#">contáctate con nuestro equipo</a></p>
         </div>
-    </aside>
-    <footer>
-        <ul>
-            <a href="#">
-                <li>Preguntas frecuentes</li>
-            </a>
-            <a href="#">
-                <li>Contáctanos</li>
-            </a>
-            <a href="#">
-                <li>Prensa</li>
-            </a>
-            <a href="#">
-                <li>Conferencias</li>
-            </a>
-            <a href="#">
-                <li>Términos y condiciones</li>
-            </a>
-            <a href="#">
-                <li>Privacidad</li>
-            </a>
-            <a href="#">
-                <li>Estudiantes</li>
-            </a>
-        </ul>
+        <div class="img-error404">
+            <img src="../assets/img/exclamation.png" alt="Signo de exclamación - Error 404" class="img-fluid">
+        </div>
+    </main>
+    <footer class="footer p-3 d-flex align-items-center">
+        <div class="container h-100">
+            <ul class="d-flex flex-wrap justify-content-evenly align-items-center h-100">
+                <li class="p-3"><a href="#">Preguntas frecuentes</a></li>
+                <li class="p-3"><a href="#">Contáctanos</a></li>
+                <li class="p-3"><a href="#">Prensa</a></li>
+                <li class="p-3"><a href="#">Conferencias</a></li>
+                <li class="p-3"><a href="#">Términos y condiciones</a></li>
+                <li class="p-3"><a href="#">Privacidad</a></li>
+                <li class="p-3"><a href="#">Estudiantes</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 
